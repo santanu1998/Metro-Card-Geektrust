@@ -22,7 +22,7 @@ public class MainTest {
 	@Test
 	public void input1() {
 		String filePath="src/test/java/resources/MetroCard_Input1";
-		String actualOutput=metroCardService.processMetroCard(filePath);
+		String actualOutput = metroCardService.processMetroCard(filePath);
 		
 		String expectedOutput="TOTAL_COLLECTION CENTRAL 300 0\n"
 				+ "PASSENGER_TYPE_SUMMARY\n"

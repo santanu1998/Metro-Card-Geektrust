@@ -6,15 +6,15 @@ package com.example.geektrust.model;
 
 public class EachJourneyChargeNeeded {
 
-	private Integer totalDiscount;
+	private Integer totalDiscountGiven;
 	private Integer costOfOverallJourney;
 	
 	public Integer getTotalDiscount() {
-		return totalDiscount;
+		return totalDiscountGiven;
 	}
 
-	public void setTotalDiscount(Integer totalDiscount) {
-		this.totalDiscount = totalDiscount;
+	public void setTotalDiscount(Integer totalDiscountGiven) {
+		this.totalDiscountGiven = totalDiscountGiven;
 	}
 
 	public Integer getCostOfOverallJourney() {
@@ -30,9 +30,9 @@ public class EachJourneyChargeNeeded {
 	 * @param totalDiscount
 	 * @param costOfTotalJourney
 	 */
-	public EachJourneyChargeNeeded(Integer totalDiscount, Integer costOfTotalJourney) {
+	public EachJourneyChargeNeeded(Integer totalDiscountGiven, Integer costOfTotalJourney) {
 		super();
-		this.totalDiscount = totalDiscount;
+		this.totalDiscountGiven = totalDiscountGiven;
 		this.costOfOverallJourney = costOfTotalJourney;
 	}
 	

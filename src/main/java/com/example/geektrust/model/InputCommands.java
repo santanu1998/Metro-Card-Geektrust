@@ -30,15 +30,14 @@ public class InputCommands {
 		this.token = token;
 	}
 	@Override
-	public boolean equals(Object obj) {
-		if(this==obj) {
+	public boolean equals(Object object) {
+		if (this == object) {
 			return true;
 		}
-		if(obj==null || this.getClass()!=obj.getClass()) {
+		if (object == null || this.getClass() != object.getClass()) {
 			return false;
 		}
-		InputCommands inputCommand=(InputCommands)obj;;
-		return this.command.equals(inputCommand.command)
-				&& this.token.equals(inputCommand.token);
+		InputCommands inputCommand = (InputCommands) object;;
+		return this.command.equals(inputCommand.command) && this.token.equals(inputCommand.token);
 	}
 }

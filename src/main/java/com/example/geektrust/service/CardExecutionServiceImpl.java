@@ -36,12 +36,15 @@ public class CardExecutionServiceImpl implements CardExecutionService {
 			
 			if (input.getCommand().equals("BALANCE")) {
 				initializeBalance(input.getToken());
-			} else if (input.getCommand().equals("CHECK_IN")) {
+			} 
+			else if (input.getCommand().equals("CHECK_IN")) {
 				processCheckIn(input.getToken());
-			} else if (input.getCommand().equals("PRINT_SUMMARY")) {
+			} 
+			else if (input.getCommand().equals("PRINT_SUMMARY")) {
 				output= printSummary();
 				System.out.print(output);
-			} else {
+			} 
+			else {
 				throw new ProcessingException("Invalid Input Commands, please check the input command.");
 			}
 		}
@@ -101,7 +104,7 @@ public class CardExecutionServiceImpl implements CardExecutionService {
 		output+="TOTAL_COLLECTION CENTRAL "+summary.getTotalAmountCentral()+" "+summary.getTotalDiscountCentral()+"\n";
 		output+="PASSENGER_TYPE_SUMMARY\n";
 		output+=centralSummary;
-		output+="TOTAL_COLLECTION AIRPORT "+summary.getTotalAmountAirport()+" "+summary.getTotalDiscountAirport()+"\n";
+		output+="TOTAL_COLLECTION AIRPORT " + summary.getTotalAmountAirport() + " " + summary.getTotalDiscountAirport()+"\n";
 		output+="PASSENGER_TYPE_SUMMARY\n";
 		output+=airportSummary;
 		
@@ -150,7 +153,7 @@ public class CardExecutionServiceImpl implements CardExecutionService {
 			}
 			stationStatsList.add(statistics);
 		}
-		stationStatsList=sortBasedOnHighestAmount(stationStatsList);
+		stationStatsList = sortBasedOnHighestAmount(stationStatsList);
 		return stationStatsList;
 	}
 	

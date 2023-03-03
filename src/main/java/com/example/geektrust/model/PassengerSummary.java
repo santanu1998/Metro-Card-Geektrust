@@ -9,7 +9,7 @@ import java.util.List;
 
 public class PassengerSummary {
 
-	private HashMap<String,Passenger> passengerMap;
+	private HashMap<String,Passenger> passengersMap;
 	private List<PassengerCheckIn> checkInList;
 	private Integer totalAmountAirport;
 	private Integer totalAmountCentral;
@@ -35,7 +35,7 @@ public class PassengerSummary {
 	}
 
 	public PassengerSummary() {
-		this.passengerMap=new HashMap<>();
+		this.passengersMap=new HashMap<>();
 		this.checkInList=new ArrayList<>();
 		this.totalAmountAirport=0;
 		this.totalAmountCentral=0;
@@ -78,10 +78,10 @@ public class PassengerSummary {
 	}
 
 	public HashMap<String, Passenger> getPassengerMap() {
-		return passengerMap;
+		return passengersMap;
 	}
-	public void setPassengerMap(HashMap<String, Passenger> passengerMap) {
-		this.passengerMap = passengerMap;
+	public void setPassengerMap(HashMap<String, Passenger> passengersMap) {
+		this.passengersMap = passengersMap;
 	}
 	public List<PassengerCheckIn> getCheckInList() {
 		return checkInList;
